@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+html {
+  font-size: 62.5%; box-sizing: border-box;
+}
+body,#root { margin: 0; height: 100vh;}
+body,input,select,textarea{font-size: 1.6rem;font-family: sans-serif;}
+
+a:hover{color: #ff8000;}
+.grid-container{
+  display: grid;
+  grid-template-areas: 
+  'header'
+  'main'
+  'footer';
+  grid-template-rows: 5rem 1fr 5rem;
+  grid-template-columns: 1fr;height: 100%;
+}
+header{
+  grid-area: header;padding: .5rem;
+  background-color: #203040;display: flex;align-items: center;
+}
+header a{text-decoration: none;color: #fff;}
+main{
+  grid-area: main;
+}
+footer{
+  grid-area: footer;
+  background-color: #203040;
+  display: flex;justify-content: center;
+}
+
